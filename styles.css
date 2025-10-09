@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "CaskaydiaMonoNF";
+    src: url("CaskaydiaCoveNerdFontMono-Regular.ttf");
+}
+
+body {
+    background-image: url("pictures/Background.jpg");
+    background-origin: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: "CaskaydiaMonoNF";
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 18px;
+    transition: border-radius 0.3s ease;
+}
+
+.profile-picture:hover {
+    border-radius: 50%;
+}
+
+.texts {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(33, 33, 33, 0.6));
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px 8px 16px 8px;
+    margin: 8px;
+    padding: 12px 12px;
+    transition: transform 0.2s ease;
+    font-weight: 700;
+}
+
+.texts:hover {
+    transform: scale(1.1);
+}
+
+#myName {
+    font-weight: bold;
+    background: linear-gradient(45deg, purple, blue);
+    backgroud-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.links-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0px;
+}
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.github-btn:hover {
+    transform: scale(1.1);
+    background: #24292e;
+}

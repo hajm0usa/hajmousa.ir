@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "CaskaydiaMonoNF";
+  src: url("CaskaydiaCoveNerdFontMono-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "CaskaydiaMonoNF";
+  background-color: #1a1b26;
+  color: #a9b1d6;
+  padding: 40px 20px;
+  line-height: 1.7;
+  background-image: url("pictures/Background.jpg");
+  background-size: cover;
+  background-origin: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #24283b;
+  border-radius: 8px;
+  padding: 40px;
+  border: 1px solid #414868;
+}
+
+.blur {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(33, 33, 33, 0.8));
+  backdrop-filter: blur(4px);
+}
+
+.header {
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #414868;
+  display: flex;
+  flex-direction: space-between;
+  gap: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 18px;
+    transition: border-radius 0.3s ease;
+}
+
+.profile-picture:hover {
+    border-radius: 50%;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 8px;
+  font-weight: normal;
+  color: #7aa2f7;
+}
+
+.subtitle {
+  color: #7dcfff;
+  font-size: 1em;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-size: 1.15em;
+  margin-bottom: 12px;
+  font-weight: normal;
+  color: #bb9af7;
+}
+
+p,
+li {
+  color: #c0caf5;
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 6px 0;
+  padding-left: 18px;
+  position: relative;
+}
+
+li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #7aa2f7;
+}
+
+a {
+  color: #7dcfff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #2ac3de;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background-color: #1a1b26;
+  border-radius: 4px;
+  border: 1px solid #414868;
+  transition: all 0.2s;
+}
+
+.link-item:hover {
+  background-color: #292e42;
+  border-color: #7aa2f7;
+}
+
+.link-icon {
+  color: #7aa2f7;
+  font-size: 0.9em;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #414868;
+  margin: 30px 0;
+}
+
+.education-item {
+  margin-bottom: 15px;
+}
+
+.education-title {
+  color: #c0caf5;
+  font-weight: normal;
+}
+
+.education-meta {
+  color: #565f89;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .container {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .links {
+    grid-template-columns: 1fr;
+  }
+}
